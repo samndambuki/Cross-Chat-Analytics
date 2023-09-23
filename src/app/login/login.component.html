@@ -1,0 +1,176 @@
+<div class="container">
+  <div class="navbar">
+    <img src="" />
+    <p class="logoName">Barack Llama</p>
+
+    <div class="register">
+      <p>Need an account?</p>
+      <button>Register for free!</button>
+    </div>
+  </div>
+  <div class="content">
+    <div class="signInOptions">
+      <button (click)="openSignInModal()" id="signIn">Sign In</button>
+    </div>
+  </div>
+
+  <!-- sign-in pop up -->
+  <div *ngIf="showModal" class="modal">
+    <div class="modal-content">
+      <h2 class="signInText">Sign In</h2>
+      <div class="emailPasswordIncorrect">
+        <p>Your email or password is incorrect, please try again.</p>
+      </div>
+      <br />
+      <form>
+        <label for="email" id="yourEmail">Your email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Type your e-mail"
+          [(ngModel)]="email"
+        />
+
+        <label for="password" id="yourPassword">Your password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Your password here"
+          [(ngModel)]="password"
+        />
+
+        <br />
+
+        <!-- recapctha section for robot verification -->
+
+        <!-- Recapctha section for robot verification -->
+        <!-- <ng-recaptcha
+          [siteKey]="reCaptchaSiteKey"
+          (resolved)="handleCaptchaResolved($event)"
+        ></ng-recaptcha> -->
+
+        <div class="form-actions">
+          <button id="loginButton">Log In</button>
+          <br />
+          <br />
+          <p id="forgotPassword" (click)="openForgotPasswordModal()">
+            Forgot Password
+          </p>
+        </div>
+
+        <button (click)="closeSignInModal()" id="closeModal">
+          Close Modal
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- end of sign in pop up -->
+
+  <!-- forgotPassword Modal -->
+  <div *ngIf="showForgotPasswordModal" class="forgotPasswordmodal">
+    <div class="forgotPasswordModalcontent">
+      <h2 class="forgotPasswordText">Forgot Password?</h2>
+      <p id="emailwithInstructions">
+        Don't worry we will email you instructions for resetting your password.
+      </p>
+
+      <br />
+      <form>
+        <label for="email" id="accountEmail">Account email:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="What is the account email"
+          [(ngModel)]="email"
+        />
+
+        <br />
+
+        <!-- recapctha section for robot verification -->
+
+        <!-- Recapctha section for robot verification -->
+        <!-- <ng-recaptcha
+            [siteKey]="reCaptchaSiteKey"
+            (resolved)="handleCaptchaResolved($event)"
+          ></ng-recaptcha> -->
+
+        <div class="form-actions">
+          <button id="resetPasswordButton" (click)="openShowEmailSentModal()">
+            Reset Password
+          </button>
+          <br />
+          <br />
+        </div>
+
+        <button (click)="closeForgotPasswordModal()" id="closeModal">
+          Close Modal
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- end of forgot password modal -->
+
+  <!-- email sent modal -->
+  <div *ngIf="showEmailSentModal" class="emailSentModal">
+    <div class="emailSentModalContent">
+      <h2>Email Sent</h2>
+      <p>
+        We have sent an email to <span>samuelndambuki08@gmail.com</span> with
+        password reset instructions
+      </p>
+      <button (click)="openChangePasswordModal()" id="closeshowEmailSentModal">
+        Okay
+      </button>
+    </div>
+  </div>
+  <!-- end of email sent modal -->
+
+  <!-- start of change password modal -->
+  <div *ngIf="showChangePasswordModal" class="changePasswordModal">
+    <div class="changePasswordModalContent">
+      <h2>Change Password</h2>
+      <p id="enterNewPasswordText">
+        Enter a new password to access your account.
+      </p>
+      <form>
+        <label for="password" id="newPassword">New password</label>
+        <input
+          type="password"
+          id="newPasswordInput"
+          placeholder="Enter your new password"
+        />
+
+        <label for="password" id="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPasswordInput"
+          placeholder="Enter your new password"
+        />
+        <br />
+        <div class="form-actions">
+          <button id="changePasswordButton" (click)="openChangePasswordSuccessModal()">Change Password</button>
+          <button
+            id="closeChangePasswordModalButton"
+            (click)="closeChangePasswordModal()"
+          >
+            Close
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- end of change password modal -->
+
+  <!-- password change successful modal -->
+  <div *ngIf="showChangePwdSuccess" class="changePwdSuccessModal">
+    <div class="changePwdSuccessModalContent">
+      <h2>Done</h2>
+      <p>Your password has been changed successfully</p>
+      <button id="backToLoginButton" (click)="closeChangePasswordSuccessModal()">
+        Back to login
+      </button>
+    </div>
+  </div>
+
+  <!-- end of password change successful modal -->
+</div>
