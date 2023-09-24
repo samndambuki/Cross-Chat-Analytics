@@ -9,6 +9,7 @@ import { RecaptchaModule } from 'ng-recaptcha';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { EmailsentComponent } from './emailsent/emailsent.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
     RecaptchaModule,
     CommonModule,
     LoginComponent,
-    ResetpasswordComponent
+    ResetpasswordComponent,
+    EmailsentComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RecaptchaModule } from 'ng-recaptcha';
-import { Router, RouterModule } from '@angular/router';
-import { AppRoutingModule } from '../app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -15,37 +14,6 @@ import { AppRoutingModule } from '../app-routing.module';
 export class LoginComponent {
   email: string = '';
   password: string = '';
-
-  showEmailSentModal: boolean = false;
-  showChangePasswordModal: boolean = false;
-  showChangePwdSuccess: boolean = false;
-
-  openShowEmailSentModal() {
-    this.showEmailSentModal = true;
-  }
-
-  closeShowEmailSentModal() {
-    this.showEmailSentModal = false;
-  }
-
-  openChangePasswordModal() {
-    this.closeShowEmailSentModal();
-    this.showChangePasswordModal = true;
-  }
-
-  closeChangePasswordModal() {
-    this.showChangePasswordModal = false;
-  }
-
-  openChangePasswordSuccessModal() {
-    this.closeChangePasswordModal();
-    this.showChangePwdSuccess = true;
-  }
-
-  closeChangePasswordSuccessModal() {
-    this.showChangePwdSuccess = false;
-    console.log('button cliked');
-  }
 
   //reCAPTCHA site key
   reCaptchaSiteKey = '6Le0_0UoAAAAAHvOJm5DIRsx7vp13dMDm5iJmI5Z';
