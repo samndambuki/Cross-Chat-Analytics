@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     RecaptchaModule,
     CommonModule,
-    LoginComponent
+    LoginComponent,
+    ResetpasswordComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

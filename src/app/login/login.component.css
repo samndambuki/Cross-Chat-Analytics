@@ -50,33 +50,6 @@
   color: #c28f56;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
-}
-
-.signInOptions {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 15rem;
-}
-
-#signIn {
-  padding: 1rem;
-  width: 20vw;
-  background-color: #c28f56;
-  color: white;
-  border: 1px solid white;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
 /* hover effects on signIn button */
 #signIn:hover {
   background-color: white;
@@ -84,19 +57,17 @@
   cursor: pointer;
 }
 
-/* styles for the modal/pop up */
+/* styles for signin modal */
 .modal {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
+  top: 50%;
+  left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 15rem;
 }
 
 /* CSS for modal content */
@@ -197,114 +168,8 @@
   cursor: pointer;
 }
 
-#closeModal {
-  width: 20vw;
-  padding: 0.8rem;
-  border: 1px solid white;
-  border-radius: 10px;
-  background-color: #c28f56;
-  color: white;
-  cursor: pointer;
-  margin-top: 0.5rem;
-}
+/* end of sign in modal */
 
-/* start of forgotPassword modal */
-.forgotPasswordmodal {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* CSS for forgotPassword modal content */
-.forgotPasswordModalcontent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  max-width: 80%;
-  width: 400px;
-  height: 70vh;
-}
-
-.forgotPasswordText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  cursor: pointer;
-}
-
-#emailwithInstructions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 18vw;
-  color: #948e9c;
-  cursor: pointer;
-}
-
-/* CSS for form inside the modal */
-.modal-content form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#accountEmail {
-  font-weight: bold;
-  display: inline-block;
-  width: 120px;
-  margin-right: 12.7rem;
-  margin-bottom: 8px;
-  cursor: pointer;
-}
-
-#email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #d9d9d9;
-  padding: 0.5rem;
-  border-radius: 5px;
-  width: 18vw;
-}
-
-#resetPasswordButton {
-  width: 20vw;
-  padding: 0.8rem;
-  border: 1px solid white;
-  border-radius: 10px;
-  background-color: #c28f56;
-  color: white;
-  cursor: pointer;
-}
-
-#closeModal {
-  width: 20vw;
-  padding: 0.8rem;
-  border: 1px solid white;
-  border-radius: 10px;
-  background-color: #c28f56;
-  color: white;
-  cursor: pointer;
-  margin-top: 0.5rem;
-}
-
-/* end of reset password modal */
 
 /* show email sent modal */
 .emailSentModal {
@@ -468,7 +333,7 @@
 
 /* start of changePasswordSuccess modal */
 
-.changePwdSuccessModal{
+.changePwdSuccessModal {
   display: block;
   position: fixed;
   top: 0;
@@ -483,7 +348,7 @@
   cursor: pointer;
 }
 
-.changePwdSuccessModalContent{
+.changePwdSuccessModalContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
