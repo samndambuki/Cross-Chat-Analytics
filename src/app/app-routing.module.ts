@@ -7,6 +7,7 @@ import { EmailsentComponent } from './emailsent/emailsent.component';
 import { ChangepasswordComponent } from './changepassword/changepassword.component';
 import { PasswordchangesuccessfulComponent } from './passwordchangesuccessful/passwordchangesuccessful.component';
 import { YournameComponent } from './yourname/yourname.component';
+import { YouremailComponent } from './youremail/youremail.component';
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path:'emailsent',component:EmailsentComponent},
   {path:'changepassword',component:ChangepasswordComponent},
   {path:'passwordchangesuccessful',component:PasswordchangesuccessfulComponent},
-  {path:'yourname',component:YournameComponent}
+  {path:'yourname',component:YournameComponent},
+  {path:'youremail',component:YouremailComponent}
 ];
 
 @NgModule({

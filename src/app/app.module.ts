@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 import { EmailsentComponent } from './emailsent/emailsent.component';
+import { YournameComponent } from './yourname/yourname.component';
+import { YouremailComponent } from './youremail/youremail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { EmailsentComponent } from './emailsent/emailsent.component';
     CommonModule,
     LoginComponent,
     ResetpasswordComponent,
-    EmailsentComponent
+    EmailsentComponent,
+    YournameComponent,
+    YouremailComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
