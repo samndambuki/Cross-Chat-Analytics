@@ -1,0 +1,180 @@
+.container {
+  background-color: #c28f56;
+  height: 100vh;
+  width: 100vw;
+}
+
+.navBar {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  color: white;
+  gap: 5rem;
+}
+
+/* apply margin-top to child elements within .navbar */
+.navBar > * {
+  margin-top: 5rem;
+}
+
+#back {
+  margin-left: 20rem;
+  font-size: 1.5rem;
+}
+
+#logo {
+  margin-left: 20rem;
+  font-size: 1.5rem;
+}
+
+.topContents {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#letsDoIt {
+  color: white;
+  font-size: 1.5rem;
+  width: 15vw;
+  margin-top: 3rem;
+}
+
+.yourNameModal {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.yourNameModalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  width: 25vw;
+  height: 40vh;
+  margin: 0;
+}
+
+.checkboxActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+/* Style for the checkbox container */
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px; /* Adjust the size of the checkbox */
+  cursor: pointer;
+}
+
+/* Hide the default browser checkbox */
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+/* Style for the custom checkbox */
+.checkbox-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px; /* Adjust the size of the checkbox */
+  width: 15px; /* Adjust the size of the checkbox */
+  background-color: #fff;
+  border: 2px solid #d9d9d9; /* Checkbox border color */
+  border-radius: 50%; /* Makes it round */
+}
+
+/* Style for the tick mark (hidden by default) */
+.checkbox-container .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 3px; /* Adjust the position of the tick mark */
+  top: 2px; /* Adjust the position of the tick mark */
+  width: 5px; /* Adjust the size of the tick mark */
+  height: 8px; /* Adjust the size of the tick mark */
+  border: solid #00ff00; /* Green color for the tick mark */
+  border-width: 0 3px 3px 0; /* Create an "L" shape for the tick mark */
+  transform: rotate(45deg); /* Rotate the tick mark to form an "X" shape */
+}
+
+/* Show the tick mark when the checkbox is checked */
+.checkbox-container input[type="checkbox"]:checked + .checkmark::after {
+  display: block;
+}
+
+.yourNameModalContent p {
+  margin-top: 1rem;
+  margin-right: 3rem;
+  width: 23vw;
+}
+
+.terms {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.privacyPolicy {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#yourName {
+  font-weight: bold;
+  display: inline-block;
+  width: 120px;
+  margin-right: 18.5rem;
+  margin-bottom: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+#youNameInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #d9d9d9;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 25vw;
+}
+
+.formactions button {
+  width: 30vw;
+  padding: 0.8rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+  color: #c28f56;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.formactions p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 2.5rem;
+}
+
+.underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
