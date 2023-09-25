@@ -14,12 +14,17 @@ import { YournameComponent } from './yourname/yourname.component';
 import { YouremailComponent } from './youremail/youremail.component';
 import { ResentemailComponent } from './resentemail/resentemail.component';
 import { VerifyemailComponent } from './verifyemail/verifyemail.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { Icon } from 'ionicons/dist/types/components/icon/icon';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
+    
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
     SignupComponent,
@@ -32,7 +37,9 @@ import { VerifyemailComponent } from './verifyemail/verifyemail.component';
     YournameComponent,
     YouremailComponent,
     VerifyemailComponent,
-    ResentemailComponent
+    ResentemailComponent,
+    UserDashboardComponent,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

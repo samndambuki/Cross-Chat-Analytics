@@ -10,6 +10,7 @@ import { YournameComponent } from './yourname/yourname.component';
 import { YouremailComponent } from './youremail/youremail.component';
 import { VerifyemailComponent } from './verifyemail/verifyemail.component';
 import { ResentemailComponent } from './resentemail/resentemail.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:'yourname',component:YournameComponent},
   {path:'youremail',component:YouremailComponent},
   {path:'verifyemail',component:VerifyemailComponent},
-  {path:'resentemail',component:ResentemailComponent}
+  {path:'resentemail',component:ResentemailComponent},
+  {path:'dashboard',component:UserDashboardComponent}
 ];
 
 @NgModule({
