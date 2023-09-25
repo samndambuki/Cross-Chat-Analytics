@@ -11,6 +11,7 @@ import { YouremailComponent } from './youremail/youremail.component';
 import { VerifyemailComponent } from './verifyemail/verifyemail.component';
 import { ResentemailComponent } from './resentemail/resentemail.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -24,7 +25,8 @@ const routes: Routes = [
   {path:'youremail',component:YouremailComponent},
   {path:'verifyemail',component:VerifyemailComponent},
   {path:'resentemail',component:ResentemailComponent},
-  {path:'dashboard',component:UserDashboardComponent}
+  {path:'dashboard',component:UserDashboardComponent},
+  {path:'settings',component:AccountSettingsComponent}
 ];
 
 @NgModule({

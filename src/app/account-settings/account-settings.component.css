@@ -1,0 +1,166 @@
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #162447;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b2a49;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    
+    font-size: 1rem;
+    /* margin-right: auto; Pushes the logo and buttons to the left */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-weight: 100;
+
+}
+
+.navbar-logo span{
+    /* font-weight: bold; */
+    font-size: 2rem;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    /* font-size: 18px; */
+    
+}
+
+.navbar-menu a:hover {
+    background-color: #21406c; 
+    padding: 0.7rem;
+}
+
+.navbar-user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.account-settings{
+    display: flex;
+    align-items: center;
+    /* margin: 2rem; */
+    padding: 2rem;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.side-and-form{
+    display: flex;
+   
+}
+
+.side{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+.side button{
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+.form-container{
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    width: 70%; /* Adjust the width as needed */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-submit {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    float: right;
+    clear: right; /* Add this to move below the floated input fields */
+    display: block; /* Add this for block-level layout */
+}
+
+/* Style the container */
+.delete-acc-card {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    
+}
+
+/* Style the text */
+.delete-acc-details {
+    margin:.5rem;
+    border-top: 4rem;
+    border-color: lightgray;
+}
+.delete-text{
+    font-size: x-large;
+}
+/* Style the button */
+.delete-button {
+    background-color: lightgrey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
