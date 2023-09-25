@@ -12,6 +12,8 @@ import { ResetpasswordComponent } from './resetpassword/resetpassword.component'
 import { EmailsentComponent } from './emailsent/emailsent.component';
 import { YournameComponent } from './yourname/yourname.component';
 import { YouremailComponent } from './youremail/youremail.component';
+import { ResentemailComponent } from './resentemail/resentemail.component';
+import { VerifyemailComponent } from './verifyemail/verifyemail.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { YouremailComponent } from './youremail/youremail.component';
     ResetpasswordComponent,
     EmailsentComponent,
     YournameComponent,
-    YouremailComponent
+    YouremailComponent,
+    VerifyemailComponent,
+    ResentemailComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
