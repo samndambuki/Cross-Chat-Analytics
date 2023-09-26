@@ -1,14 +1,15 @@
 <div class="container">
-  <div class="navbar">
-    <p>Logo</p>
-    <div class="dashBoardAndCommunities">
-      <button id="dashboardButton">Dashboard</button>
-      <button id="myCommuntiesButton">My Communities</button>
+    <!-- start of navigation bar -->
+    <div class="navbar">
+      <p id="logo">Logo</p>
+      <div class="dashBoardAndCommunities">
+        <p id="dashboardButton">Dashboard</p>
+        <p id="myCommuntiesButton">My Communities</p>
+      </div>
+      <p><fa-icon id="faUserIcon" [icon]="faUser"></fa-icon></p>
     </div>
-    <div class="profile">
-      <img src="" />
-    </div>
-  </div>
+  
+    <!-- end of navigation bar -->
 
   <!-- start of first container -->
   <div class="firstContainer">
@@ -27,7 +28,7 @@
   <!-- end of first container -->
 
   <!-- start of third container -->
-  <div class="second container">
+  <div class="secondContainer">
     <div class="navigation">
       <p>OVERVIEW</p>
       <p>ACQUISTION</p>
@@ -40,24 +41,24 @@
     <div class="analytics">
       <!-- start of total members analytics -->
       <div class="totalMembers">
-        <h2>Total Members</h2>
-        <p>254</p>
-        <p>+ 3,76% from last X days</p>
+        <p>Total Members</p>
+        <h1>254</h1>
+        <p id="percentage">+ 3,76% from last X days</p>
       </div>
       <!-- end of total members analytics -->
 
       <!-- start of engagemnent rate analytics -->
       <div class="engagementRate">
-        <h2>Engagement Rate</h2>
-        <p>3</p>
-        <p>-5,87% from last X days</p>
+        <p>Engagement Rate</p>
+        <h1>3</h1>
+        <p id="percentage">-5,87% from last X days</p>
       </div>
       <!-- end of engagement rate analytics -->
 
       <!-- start of churn analytics -->
       <div class="churn">
         <h2>Churn</h2>
-        <p>NO data</p>
+        <h2>No data</h2>
         <p>No data</p>
       </div>
       <!-- end of churn analytics -->
