@@ -1,0 +1,38 @@
+.container {
+  background-color: #f0f2f5;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* start of navbar styling */
+.navbar {
+  background-color: #294a6f;
+  color: white;
+  height: 10vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.navbar p {
+  margin-left: 4.5rem;
+  font-size: 1.5rem;
+}
+
+.dashBoardAndCommunities {
+  display: flex;
+  gap: 3rem;
+  margin-left: 5rem;
+}
+
+#dashboardButton {
+  padding: 0.5rem;
+}
+
+#myCommuntiesButton {
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+/* end of navbar styling */
+

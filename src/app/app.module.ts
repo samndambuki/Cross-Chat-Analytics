@@ -14,6 +14,10 @@ import { YournameComponent } from './yourname/yourname.component';
 import { YouremailComponent } from './youremail/youremail.component';
 import { ResentemailComponent } from './resentemail/resentemail.component';
 import { VerifyemailComponent } from './verifyemail/verifyemail.component';
+import { NewcommunityComponent } from './newcommunity/newcommunity.component';
+import { OverviewComponent } from './overview/overview.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { VerifyemailComponent } from './verifyemail/verifyemail.component';
     YournameComponent,
     YouremailComponent,
     VerifyemailComponent,
-    ResentemailComponent
+    ResentemailComponent,
+    NewcommunityComponent,
+    OverviewComponent,
+    CalendarComponent,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
