@@ -13,6 +13,7 @@ import { ResentemailComponent } from './resentemail/resentemail.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { BillingComponent } from './billing/billing.component';
+import { FirstCommunityComponent } from './first-community/first-community.component';
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path:'resentemail',component:ResentemailComponent},
   {path:'dashboard',component:UserDashboardComponent},
   {path:'settings',component:AccountSettingsComponent},
-  {path:'billing',component:BillingComponent}
+  {path:'billing',component:BillingComponent},
+  {path:'firstcommunity',component:FirstCommunityComponent}
 ];
 
 @NgModule({
