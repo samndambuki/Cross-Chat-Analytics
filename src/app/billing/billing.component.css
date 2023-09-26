@@ -1,0 +1,169 @@
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #162447;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b2a49;
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    
+    font-size: 1rem;
+    /* margin-right: auto; Pushes the logo and buttons to the left */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    font-weight: 100;
+
+}
+
+.navbar-logo span{
+    /* font-weight: bold; */
+    font-size: 2rem;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    /* font-size: 18px; */
+    
+}
+
+.navbar-menu a:hover {
+    background-color: #21406c; 
+    padding: 0.7rem;
+}
+
+.navbar-user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+
+.account-settings{
+    display: flex;
+    align-items: center;
+    /* margin: 2rem; */
+    padding: 2rem;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.side-and-form{
+    display: flex;
+   
+}
+
+.side{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+.side button{
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+.container{
+   
+    display:flex;
+    /* align-items: flex-start; */
+    justify-content: space-around;
+    width:90%;
+}
+.user-plan-info{
+    background-color: white;
+    width: 30%;  
+    border-radius: 1rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.plan-details{
+    background-color: rgb(253, 253, 251);
+   width: 25%;
+   display: flex;
+   flex-direction:column;
+   justify-content: space-around;
+   padding: .5rem;
+   border-radius: .7rem;
+}
+.status{
+    background-color: black;
+    color: white;
+    padding: .3rem;
+    border-radius: 1rem;
+    font-size: .8rem;
+}
+.status-plan{
+display :flex;
+align-items: center;
+gap: .5rem;
+}
+
+.plan-cash{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: .6rem ;
+    border-color: black;
+    font-size: 1rem;
+    
+   height: fit-content;
+}
+
+.cash{
+    display :flex;
+    gap: .5rem;
+}
+.plan-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+.plan-actions button{
+    border:none;
+    background-color: rgb(177, 136, 97);
+    color: white;
+    padding: .5rem .7rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
