@@ -14,8 +14,14 @@ import { YournameComponent } from './yourname/yourname.component';
 import { YouremailComponent } from './youremail/youremail.component';
 import { ResentemailComponent } from './resentemail/resentemail.component';
 import { VerifyemailComponent } from './verifyemail/verifyemail.component';
+
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { Icon } from 'ionicons/dist/types/components/icon/icon';
+import { NewcommunityComponent } from './newcommunity/newcommunity.component';
+import { OverviewComponent } from './overview/overview.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -38,7 +44,12 @@ import { Icon } from 'ionicons/dist/types/components/icon/icon';
     YouremailComponent,
     VerifyemailComponent,
     ResentemailComponent,
+
     UserDashboardComponent,
+
+    NewcommunityComponent,
+    OverviewComponent,
+    CalendarComponent,
     
   ],
   providers: [],
