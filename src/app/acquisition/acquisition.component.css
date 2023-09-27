@@ -1,38 +1,231 @@
 .container {
-    background-color: #f0f2f5;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  /* start of navbar styling */
-  .navbar {
-    background-color: #294a6f;
-    color: white;
-    height: 10vh;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-  }
-  
-  .navbar p {
-    margin-left: 4.5rem;
-    font-size: 1.5rem;
-  }
-  
-  .dashBoardAndCommunities {
-    display: flex;
-    gap: 3rem;
-    margin-left: 5rem;
-  }
-  
-  #dashboardButton {
-    padding: 0.5rem;
-  }
-  
-  #myCommuntiesButton {
-    margin-left: 1rem;
-    padding: 0.5rem;
-  }
-  
-  /* end of navbar styling */
-  
+  background-color: #f0f2f5;
+  height: 250vh;
+  width: 100vw;
+}
+
+/* start of styling for navigation bar */
+.navbar {
+  background-color: #294a6f;
+  color: white;
+  height: 10vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100vw;
+}
+
+.navbar p {
+  margin-left: 4.5rem;
+  font-size: 1.5rem;
+}
+
+#logo {
+  font-weight: bold;
+}
+
+.dashBoardAndCommunities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 1rem;
+}
+
+#dashboardButton {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#myCommuntiesButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #547091;
+  background-color: #547091;
+  border-radius: 5px;
+  width: 10vw;
+}
+
+#faUserIcon {
+  margin-left: 55rem;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-size: 2rem;
+}
+
+/* end of styling for navigation bar */
+
+/* start of first container styling */
+.firstContainer {
+  margin-top: 2rem;
+  display: flex;
+  gap: 65rem;
+  align-items: center;
+  margin-left: 4.3rem;
+}
+
+.groupName {
+  display: flex;
+  flex-direction: column;
+}
+
+.pdfAndCalendar {
+  display: flex;
+}
+
+.calendar {
+  margin-left: 0.5rem;
+}
+/* end of first container styling */
+
+/* start of styling for second container */
+.secondContainer {
+  margin-top: 2rem;
+  margin-left: 3.8rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+  color: #a3b2c5;
+}
+/* end of styling for second container */
+
+/* start of styling of title analytics */
+.titleAnalytics {
+  display: flex;
+  gap: 2rem;
+}
+/* end of styling for title analytics */
+
+/* start of styling for total members title */
+.totalMembersTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 28vw;
+  height: 22vh;
+  border: 1px solid transparent;
+  background-color: white;
+}
+
+.totalMembersTitle > * {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#percentage {
+  color: #4ad27e;
+}
+/* end of stlying for total members title */
+
+/* start of styling for new members title */
+.newMembersTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 28vw;
+  height: 22vh;
+  border: 1px solid transparent;
+  background-color: white;
+}
+
+.newMembersTitle > * {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#newMemebrsPercentage {
+  color: #fa3e31;
+}
+/* end of styling for new members title */
+
+/* start of styling for average acquisition */
+.averageAcquisitionTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 29.8vw;
+  height: 22vh;
+  border: 1px solid transparent;
+  background-color: white;
+}
+
+.averageAcquisitionTitle > * {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#averageAcquisitionPercentage {
+  color: #fa3e31;
+}
+/* end of styling for average acquisition */
+
+/* start of styling for analytics */
+.analytics {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* end of styling for analytics */
+
+/* start of styling for total Members */
+.totalMembers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90vw;
+  height: 60vh;
+  border: 1px solid transparent;
+  background-color: white;
+}
+
+.totalMembers > * {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+/* end of styling for total members */
+
+/* start of styling for new members */
+.newMembers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90vw;
+  height: 60vh;
+  border: 1px solid transparent;
+  background-color: white;
+}
+
+.newMembers > * {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+/* end of styling for new members */
+
+
+/* start of styling for averageAcquisition  */
+.averageAcquisition{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90vw;
+  height: 60vh;
+  border: 1px solid transparent;
+  background-color: white;
+}
+
+.averageAcquisition > * {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+/* end of styling for average acquisition */

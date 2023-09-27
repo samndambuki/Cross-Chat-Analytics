@@ -106,7 +106,7 @@
 /* end of styling for analytics container */
 
 /* start of styling for total members */
-.totalMembers {
+.totalMembersTitle {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -142,8 +142,8 @@
   margin-left: 0.5rem;
 }
 
-#percentage {
-  color: #4ad27e;
+#percentageEngagementRate {
+  color: #fa3e31;
 }
 
 /* end of styling for engagement rate */

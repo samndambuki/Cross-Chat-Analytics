@@ -1,34 +1,31 @@
 <div class="container">
   <!-- start of navigation bar -->
   <div class="navbar">
-    <p>Logo</p>
+    <p id="logo">Logo</p>
     <div class="dashBoardAndCommunities">
-      <button id="dashboardButton">Dashboard</button>
-      <button id="myCommuntiesButton">My Communities</button>
+      <p id="dashboardButton">Dashboard</p>
+      <p id="myCommuntiesButton">My Communities</p>
     </div>
-    <div class="profile">
-      <img src="" />
-    </div>
+    <p><fa-icon id="faUserIcon" [icon]="faUser"></fa-icon></p>
   </div>
+
   <!-- end of navigation bar -->
 
   <!-- start of first cntainer -->
-
+  <!-- start of first container -->
   <div class="firstContainer">
-    <!-- start of groupName -->
     <div class="groupName">
       <h2>Group Name</h2>
-      <p>My Groups</p>
-      <p>Group Name</p>
+      <p>My groups</p>
+      <p>Group name</p>
     </div>
-    <!-- end of groupName -->
-
     <div class="pdfAndCalendar">
-      <p>PDF Download</p>
-      <p>Calendar</p>
+      <p>PDF download</p>
+      <div class="calendar">
+        <p>20, June 2023 - 29 June 2023</p>
+      </div>
     </div>
   </div>
-
   <!-- end of first container -->
 
   <!-- start of second container -->
@@ -46,19 +43,19 @@
       <div class="totalMembersTitle">
         <p>Total Members</p>
         <p>254</p>
-        <p>+3,76% from last X days</p>
+        <p id="percentage">+3,76% from last X days</p>
       </div>
 
       <div class="newMembersTitle">
         <p>New Members</p>
         <p>35</p>
-        <p>-5,87% from last X days</p>
+        <p id="newMemebrsPercentage">-5,87% from last X days</p>
       </div>
 
       <div class="averageAcquisitionTitle">
         <p>Average Acquistion</p>
         <p>12</p>
-        <p>5,87% from last X days</p>
+        <p id="averageAcquisitionPercentage">5,87% from last X days</p>
       </div>
     </div>
     <!-- end of title analytics -->
