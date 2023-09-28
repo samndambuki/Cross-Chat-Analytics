@@ -17,6 +17,7 @@ import { AcquisitionComponent } from './acquisition/acquisition.component';
 import { EngagementComponent } from './engagement/engagement.component';
 import { EngagedMembersAverageMessagesComponent } from './engaged-members-average-messages/engaged-members-average-messages.component';
 import { RetentionComponent } from './retention/retention.component';
+import { ContentComponent } from './content/content.component';
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -36,7 +37,8 @@ const routes: Routes = [
   {path:'acquisition',component:AcquisitionComponent},
   {path:'engagement',component:EngagementComponent},
   {path:'enagagedMembersAverageMessages',component:EngagedMembersAverageMessagesComponent},
-  {path:'retention',component:RetentionComponent}
+  {path:'retention',component:RetentionComponent},
+  {path:'content',component:ContentComponent}
 ];
 
 @NgModule({

@@ -22,6 +22,7 @@ import { EngagementComponent } from './engagement/engagement.component';
 import { EngagedMembersAverageMessagesComponent } from './engaged-members-average-messages/engaged-members-average-messages.component';
 import { AcquisitionComponent } from './acquisition/acquisition.component';
 import { RetentionComponent } from './retention/retention.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { RetentionComponent } from './retention/retention.component';
     EngagementComponent,
     AcquisitionComponent,
     EngagedMembersAverageMessagesComponent,
-    RetentionComponent
+    RetentionComponent,
+    ContentComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
