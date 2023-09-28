@@ -21,6 +21,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EngagementComponent } from './engagement/engagement.component';
 import { EngagedMembersAverageMessagesComponent } from './engaged-members-average-messages/engaged-members-average-messages.component';
 import { AcquisitionComponent } from './acquisition/acquisition.component';
+import { RetentionComponent } from './retention/retention.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AcquisitionComponent } from './acquisition/acquisition.component';
     FontAwesomeModule,
     EngagementComponent,
     AcquisitionComponent,
-    EngagedMembersAverageMessagesComponent
+    EngagedMembersAverageMessagesComponent,
+    RetentionComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

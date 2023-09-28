@@ -16,6 +16,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { AcquisitionComponent } from './acquisition/acquisition.component';
 import { EngagementComponent } from './engagement/engagement.component';
 import { EngagedMembersAverageMessagesComponent } from './engaged-members-average-messages/engaged-members-average-messages.component';
+import { RetentionComponent } from './retention/retention.component';
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -34,7 +35,8 @@ const routes: Routes = [
   {path:'calendar',component:CalendarComponent},
   {path:'acquisition',component:AcquisitionComponent},
   {path:'engagement',component:EngagementComponent},
-  {path:'enagagedMembersAverageMessages',component:EngagedMembersAverageMessagesComponent}
+  {path:'enagagedMembersAverageMessages',component:EngagedMembersAverageMessagesComponent},
+  {path:'retention',component:RetentionComponent}
 ];
 
 @NgModule({
