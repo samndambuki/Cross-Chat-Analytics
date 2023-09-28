@@ -14,6 +14,8 @@ import { NewcommunityComponent } from './newcommunity/newcommunity.component';
 import { OverviewComponent } from './overview/overview.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { AcquisitionComponent } from './acquisition/acquisition.component';
+import { EngagementComponent } from './engagement/engagement.component';
+import { EngagedMembersAverageMessagesComponent } from './engaged-members-average-messages/engaged-members-average-messages.component';
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -30,7 +32,9 @@ const routes: Routes = [
   {path:'newcommunity',component:NewcommunityComponent},
   {path:'overview',component:OverviewComponent},
   {path:'calendar',component:CalendarComponent},
-  {path:'acquisition',component:AcquisitionComponent}
+  {path:'acquisition',component:AcquisitionComponent},
+  {path:'engagement',component:EngagementComponent},
+  {path:'enagagedMembersAverageMessages',component:EngagedMembersAverageMessagesComponent}
 ];
 
 @NgModule({

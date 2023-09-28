@@ -18,6 +18,9 @@ import { NewcommunityComponent } from './newcommunity/newcommunity.component';
 import { OverviewComponent } from './overview/overview.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EngagementComponent } from './engagement/engagement.component';
+import { EngagedMembersAverageMessagesComponent } from './engaged-members-average-messages/engaged-members-average-messages.component';
+import { AcquisitionComponent } from './acquisition/acquisition.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NewcommunityComponent,
     OverviewComponent,
     CalendarComponent,
-    FontAwesomeModule
+    FontAwesomeModule,
+    EngagementComponent,
+    AcquisitionComponent,
+    EngagedMembersAverageMessagesComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
