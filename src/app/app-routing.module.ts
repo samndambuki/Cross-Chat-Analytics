@@ -14,6 +14,8 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { BillingComponent } from './billing/billing.component';
 import { FirstCommunityComponent } from './first-community/first-community.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { AccessdeniedComponent } from './accessdenied/accessdenied.component';
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -30,7 +32,9 @@ const routes: Routes = [
   {path:'dashboard',component:UserDashboardComponent},
   {path:'settings',component:AccountSettingsComponent},
   {path:'billing',component:BillingComponent},
-  {path:'firstcommunity',component:FirstCommunityComponent}
+  {path:'firstcommunity',component:FirstCommunityComponent},
+  {path:'notfound',component:NotfoundComponent},
+  {path:'accessdenied',component:AccessdeniedComponent}
 ];
 
 @NgModule({
