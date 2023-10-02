@@ -10,6 +10,10 @@ import { YournameComponent } from './yourname/yourname.component';
 import { YouremailComponent } from './youremail/youremail.component';
 import { VerifyemailComponent } from './verifyemail/verifyemail.component';
 import { ResentemailComponent } from './resentemail/resentemail.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { BillingComponent } from './billing/billing.component';
+import { FirstCommunityComponent } from './first-community/first-community.component';
 import { NewcommunityComponent } from './newcommunity/newcommunity.component';
 import { OverviewComponent } from './overview/overview.component';
 import { CalendarComponent } from './calendar/calendar.component';
@@ -18,6 +22,7 @@ import { EngagementComponent } from './engagement/engagement.component';
 import { EngagedMembersAverageMessagesComponent } from './engaged-members-average-messages/engaged-members-average-messages.component';
 import { RetentionComponent } from './retention/retention.component';
 import { ContentComponent } from './content/content.component';
+
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -31,6 +36,10 @@ const routes: Routes = [
   {path:'youremail',component:YouremailComponent},
   {path:'verifyemail',component:VerifyemailComponent},
   {path:'resentemail',component:ResentemailComponent},
+  {path:'dashboard',component:UserDashboardComponent},
+  {path:'settings',component:AccountSettingsComponent},
+  {path:'billing',component:BillingComponent},
+  {path:'firstcommunity',component:FirstCommunityComponent}
   {path:'newcommunity',component:NewcommunityComponent},
   {path:'overview',component:OverviewComponent},
   {path:'calendar',component:CalendarComponent},

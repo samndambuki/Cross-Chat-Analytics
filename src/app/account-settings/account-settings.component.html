@@ -1,0 +1,70 @@
+<div class="body">
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <span>Logo</span>
+            <ul class="navbar-menu">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">My Communities</a></li>
+            </ul>
+        </div>
+        
+        <div class="navbar-user">
+            <!-- <ion-icon name="person-circle-outline"></ion-icon> -->
+        </div>
+    </nav>
+</div>
+
+<div style="background-color: rgb(221, 220, 220);">
+    <div class="account-settings">
+        <p>&lt;</p>  
+        <p>Account Settings</p>  
+    </div>
+    
+    <div class="side-and-form">
+      <div class="side">
+        <button>General</button>
+        <button>Billing</button>
+      </div>
+      
+        <div class="form-container">
+            <h2 class="form-title">Contact Information</h2>
+            <form action="#" method="post">
+                <label class="form-label" for="name">Name:</label>
+                <input class="form-input" type="text" id="name" name="name" required>
+                <h2 class="form-title">Email</h2>
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input" type="email" id="email" name="email" required>
+                
+                <label class="form-label" for="new-email">New Email:</label>
+                <input class="form-input" type="email" id="new-email" name="new-email">
+                
+                <label class="form-label" for="password">Password:</label>
+                <input class="form-input" type="password" id="password" name="password" required>
+                
+                <h2 class="form-title">Password</h2>
+                <label class="form-label" for="current-password">Current Password:</label>
+                <input class="form-input" type="password" id="current-password" name="current-password" required>
+                
+                <label class="form-label" for="new-password">New Password:</label>
+                <input class="form-input" type="password" id="new-password" name="new-password">
+                
+                <label class="form-label" for="confirm-new-password">Confirm New Password:</label>
+                <input class="form-input" type="password" id="confirm-new-password" name="confirm-new-password">
+                <h2 class="form-title">Time Zone</h2>
+                <label class="form-label" for="timezone">Time Zone:</label>
+                <input class="form-input" type="text" id="timezone" name="timezone">
+                
+                <button type="submit" class="form-submit">Save changes</button>
+            </form>
+    
+            <div class="delete-acc-card">
+                    <div class="delete-acc-details">
+                        <p class="delete-text">Delete account</p>
+                        <p style="color: red;">This action cannot be undone</p>
+                    </div>
+                    <button class="delete-button">Delete account</button>
+            </div>
+        </div>
+      </div>
+</div>
+
