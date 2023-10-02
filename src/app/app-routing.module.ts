@@ -16,6 +16,7 @@ import { BillingComponent } from './billing/billing.component';
 import { FirstCommunityComponent } from './first-community/first-community.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AccessdeniedComponent } from './accessdenied/accessdenied.component';
+import { ResetpwdComponent } from './resetpwd/resetpwd.component';
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -34,7 +35,8 @@ const routes: Routes = [
   {path:'billing',component:BillingComponent},
   {path:'firstcommunity',component:FirstCommunityComponent},
   {path:'notfound',component:NotfoundComponent},
-  {path:'accessdenied',component:AccessdeniedComponent}
+  {path:'accessdenied',component:AccessdeniedComponent},
+  {path:'resetpwd',component:ResetpwdComponent}
 ];
 
 @NgModule({
