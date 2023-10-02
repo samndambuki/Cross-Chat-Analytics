@@ -39,7 +39,7 @@ const routes: Routes = [
   {path:'dashboard',component:UserDashboardComponent},
   {path:'settings',component:AccountSettingsComponent},
   {path:'billing',component:BillingComponent},
-  {path:'firstcommunity',component:FirstCommunityComponent}
+  {path:'firstcommunity',component:FirstCommunityComponent},
   {path:'newcommunity',component:NewcommunityComponent},
   {path:'overview',component:OverviewComponent},
   {path:'calendar',component:CalendarComponent},
