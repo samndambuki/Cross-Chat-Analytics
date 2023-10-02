@@ -14,6 +14,10 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { BillingComponent } from './billing/billing.component';
 import { FirstCommunityComponent } from './first-community/first-community.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { AccessdeniedComponent } from './accessdenied/accessdenied.component';
+import { ResetpwdComponent } from './resetpwd/resetpwd.component';
+
 import { NewcommunityComponent } from './newcommunity/newcommunity.component';
 import { OverviewComponent } from './overview/overview.component';
 import { CalendarComponent } from './calendar/calendar.component';
@@ -39,6 +43,9 @@ const routes: Routes = [
   {path:'dashboard',component:UserDashboardComponent},
   {path:'settings',component:AccountSettingsComponent},
   {path:'billing',component:BillingComponent},
+  {path:'notfound',component:NotfoundComponent},
+  {path:'accessdenied',component:AccessdeniedComponent},
+  {path:'resetpwd',component:ResetpwdComponent},
   {path:'firstcommunity',component:FirstCommunityComponent},
   {path:'newcommunity',component:NewcommunityComponent},
   {path:'overview',component:OverviewComponent},

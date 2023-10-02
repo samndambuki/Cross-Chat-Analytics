@@ -1,0 +1,35 @@
+.whole-container{
+    background-color: #ccc;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    font-size:2rem;
+    color: rgb(0, 0, 73);
+    font-weight: bolder;
+}
+.logo p{
+    margin-bottom: 2rem;
+}
+.button-click-container{
+    width: 50%;
+    background-color: #fff;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    gap: 2rem;
+}
+.button-click-container button{
+    padding: .9rem;
+    border-color: white;
+    background-color: #c28f56;
+    color: white;
+    width: fit-content;
+    border: none;
+
+}
