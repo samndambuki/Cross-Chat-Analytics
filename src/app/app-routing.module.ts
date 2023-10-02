@@ -14,6 +14,15 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { BillingComponent } from './billing/billing.component';
 import { FirstCommunityComponent } from './first-community/first-community.component';
+import { NewcommunityComponent } from './newcommunity/newcommunity.component';
+import { OverviewComponent } from './overview/overview.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { AcquisitionComponent } from './acquisition/acquisition.component';
+import { EngagementComponent } from './engagement/engagement.component';
+import { EngagedMembersAverageMessagesComponent } from './engaged-members-average-messages/engaged-members-average-messages.component';
+import { RetentionComponent } from './retention/retention.component';
+import { ContentComponent } from './content/content.component';
+
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
@@ -31,6 +40,14 @@ const routes: Routes = [
   {path:'settings',component:AccountSettingsComponent},
   {path:'billing',component:BillingComponent},
   {path:'firstcommunity',component:FirstCommunityComponent}
+  {path:'newcommunity',component:NewcommunityComponent},
+  {path:'overview',component:OverviewComponent},
+  {path:'calendar',component:CalendarComponent},
+  {path:'acquisition',component:AcquisitionComponent},
+  {path:'engagement',component:EngagementComponent},
+  {path:'enagagedMembersAverageMessages',component:EngagedMembersAverageMessagesComponent},
+  {path:'retention',component:RetentionComponent},
+  {path:'content',component:ContentComponent}
 ];
 
 @NgModule({

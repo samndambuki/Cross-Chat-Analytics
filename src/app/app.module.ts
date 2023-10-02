@@ -16,6 +16,15 @@ import { ResentemailComponent } from './resentemail/resentemail.component';
 import { VerifyemailComponent } from './verifyemail/verifyemail.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { Icon } from 'ionicons/dist/types/components/icon/icon';
+import { NewcommunityComponent } from './newcommunity/newcommunity.component';
+import { OverviewComponent } from './overview/overview.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EngagementComponent } from './engagement/engagement.component';
+import { EngagedMembersAverageMessagesComponent } from './engaged-members-average-messages/engaged-members-average-messages.component';
+import { AcquisitionComponent } from './acquisition/acquisition.component';
+import { RetentionComponent } from './retention/retention.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +48,15 @@ import { Icon } from 'ionicons/dist/types/components/icon/icon';
     VerifyemailComponent,
     ResentemailComponent,
     UserDashboardComponent,
-    
+    NewcommunityComponent,
+    OverviewComponent,
+    CalendarComponent,
+    FontAwesomeModule,
+    EngagementComponent,
+    AcquisitionComponent,
+    EngagedMembersAverageMessagesComponent,
+    RetentionComponent,
+    ContentComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
