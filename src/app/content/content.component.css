@@ -1,0 +1,204 @@
+.container {
+  background-color: #f0f2f5;
+  height: 150vh;
+  width: 100vw;
+}
+
+/* start of styling for navigation bar */
+.navbar {
+  background-color: #294a6f;
+  color: white;
+  height: 10vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100vw;
+}
+
+.navbar p {
+  margin-left: 4.5rem;
+  font-size: 1.5rem;
+}
+
+#logo {
+  font-weight: bold;
+}
+
+.dashBoardAndCommunities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 1rem;
+}
+
+#dashboardButton {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#myCommuntiesButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #547091;
+  background-color: #547091;
+  border-radius: 5px;
+  width: 10vw;
+}
+
+#faUserIcon {
+  margin-left: 55rem;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-size: 2rem;
+}
+
+/* end of styling for navigation bar */
+
+/* start of first container styling */
+.firstContainer {
+  margin-top: 2rem;
+  display: flex;
+  gap: 65rem;
+  align-items: center;
+  margin-left: 4.3rem;
+}
+
+.groupName {
+  display: flex;
+  flex-direction: column;
+}
+
+.pdfAndCalendar {
+  display: flex;
+}
+
+.calendar {
+  margin-left: 0.5rem;
+}
+/* end of first container styling */
+
+/* start of styling for second container */
+.secondContainer {
+  margin-top: 2rem;
+  margin-left: 3.8rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 1rem;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+  color: #a3b2c5;
+}
+
+.contentText {
+  color: #c28f56;
+}
+/* end of styling for second container */
+
+/* start of styling for third container */
+.thirdContainer {
+  margin-top: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90rem;
+  height: 22rem;
+  margin-left: 3.8rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.thirdContainerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 20rem;
+}
+
+.topics {
+  background-color: #f6f6f6;
+  width: 60rem;
+  padding: 1rem;
+}
+
+.firstDate {
+  width: 20rem;
+  height: 10rem;
+  padding: 1rem;
+}
+
+.secondDate {
+  width: 20rem;
+  height: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.thirDate{
+  width: 20rem;
+  height: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+/* end of styling for third container */
+
+
+
+/* start of styling for fourth container */
+.fourthContainer{
+  margin-top: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90rem;
+  height: 22rem;
+  margin-left: 3.8rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.fourthContainerContent{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 20rem;
+}
+
+.links{
+  background-color: #f6f6f6;
+  width: 60rem;
+  padding: 1rem;
+}
+
+.firstDate {
+  width: 20rem;
+  height: 10rem;
+  padding: 1rem;
+}
+
+.secondDate {
+  width: 20rem;
+  height: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.thirDate{
+  width: 20rem;
+  height: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+/* end of styling for fourth container */

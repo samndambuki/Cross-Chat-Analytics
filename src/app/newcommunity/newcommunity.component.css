@@ -1,0 +1,425 @@
+.container {
+  background-color: #f0f2f5;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* start of styling for navigation bar */
+.navbar {
+  background-color: #294a6f;
+  color: white;
+  height: 10vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.navbar p {
+  margin-left: 4.5rem;
+  font-size: 1.5rem;
+}
+
+#logo {
+  font-weight: bold;
+}
+
+.dashBoardAndCommunities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 1rem;
+}
+
+#dashboardButton {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#myCommuntiesButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #547091;
+  background-color: #547091;
+  border-radius: 5px;
+  width: 10vw;
+}
+
+#faUserIcon {
+  margin-left: 55rem;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-size: 2rem;
+}
+
+/* end of styling for navigation bar */
+
+.myGroups {
+  margin-top: 4rem;
+}
+
+.titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80rem;
+}
+
+#myGroupsText {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-left: 4rem;
+  width: 20vw;
+}
+
+.newComunity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circleplusIcon {
+  font-size: 2rem;
+}
+
+#newCommunityButton {
+  background-color: #c28f56;
+  color: white;
+  padding: 0.5rem;
+  width: 6vw;
+  margin-right: 4rem;
+  border: 1px solid #c28f56;
+  border-radius: 5px;
+}
+
+.communities {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.communityName1 {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  width: 92vw;
+  height: 10vh;
+  margin-left: 4.4rem;
+}
+
+.communityDetails {
+  margin-left: 1rem;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 50rem;
+}
+
+.notInstalled {
+  color: white;
+  background-color: red;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.installed {
+  color: white;
+  background-color: green;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+/* Vertical Ellipsis Styles */
+.vertical-ellipsis {
+  /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+  margin-top: 10px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: black;
+  border-radius: 50%;
+  /* Adjust the spacing between dots as needed */
+  margin: 2px;
+}
+
+/* start of styling for community platform modal */
+.communityPlatformModal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.communityPlatformModalContent {
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  width: 400px;
+}
+
+.platforms {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#whatsappAndDiscord {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#whatsapp {
+  padding: 1rem;
+  background-color: #f1f4f6;
+  color: black;
+  width: 5vw;
+}
+
+#discord {
+  padding: 1rem;
+  background-color: #f1f4f6;
+  color: black;
+  width: 5vw;
+  margin-top: 0.5rem;
+}
+
+#telegram {
+  padding: 1rem;
+  background-color: #f1f4f6;
+  color: black;
+  width: 5vw;
+  height: 3vh;
+  margin-top: 0.5rem;
+}
+
+#addNowButton {
+  margin-left: 20rem;
+  padding: 0.5rem;
+  background-color: #c28f56;
+  color: white;
+  border: 1px solid #c28f56;
+  border-radius: 5px;
+}
+
+/* end of styling for community platform modal */
+
+/* start of styling for installationModal */
+.installationModal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.installationModalContent {
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  width: 400px;
+}
+
+.installationText {
+  margin-left: 1rem;
+}
+
+.completeness p {
+  margin-left: 1rem;
+  margin-top: 0.7rem;
+}
+
+/* start of instruuction1 styles */
+.instruction1 {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0.8rem;
+}
+
+#sendTheTokenText {
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 15vw;
+}
+
+#copyAndSendText {
+  color: #c2c2c2;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.accessTheBot {
+  background-color: #c28f56;
+  color: white;
+  padding: 0.5rem;
+  border: 1px solid #c28f56;
+  border-radius: 5px;
+  width: 24vw;
+  margin-top: 0.5rem;
+}
+
+.token {
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.token textarea {
+  border: none;
+  background-color: #f1f1f1;
+  width: 30vw;
+}
+
+.copyButton {
+  margin-left: 12rem;
+  background-color: #c2c2c2;
+  border: 1px solid #c2c2c2;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.number1 {
+  color: #c28f56;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* end of instruction 1 stlyes */
+
+/* start of instruction 2 stlyes */
+.instruction2 {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0.8rem;
+}
+
+#addTheBotText {
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 15vw;
+}
+
+.number2 {
+  color: #c28f56;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#clickTheButtonToCopyText {
+  color: #c2c2c2;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.phoneNumber {
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.phoneNumber Button {
+  margin-left: 15rem;
+  background-color: #c2c2c2;
+  border: 1px solid #c2c2c2;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* end of styling for installationModal */
+
+/* start of styles for delete modal  */
+.deleteModal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteModalContent {
+  background-color: white;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  width: 300px;
+  gap: 1rem;
+}
+
+.deleteModalContent h2{
+  font-size: 1.8rem;
+}
+
+.deleteModalContent p{
+  margin-top: 1rem;
+  color: #66676B;
+}
+
+.formOperations{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.deleteButton{
+  background-color: #E4E6EB;
+  padding: .5rem;
+  width: 9vw;
+  border: 1px solid #E4E6EB;
+  border-radius: 4px;
+}
+
+.cancelButton{
+  background-color: #c28f56;
+  padding: .5rem;
+  width: 9vw;
+  border: 1px solid #c28f56;
+  border-radius: 4px;
+  color: white; 
+}
+
+
+
+
+/* end of styles for delete modal */

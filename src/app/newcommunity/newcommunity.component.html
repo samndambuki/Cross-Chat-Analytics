@@ -1,0 +1,136 @@
+<div class="container">
+  <!-- start of navigation bar -->
+  <div class="navbar">
+    <p id="logo">Logo</p>
+    <div class="dashBoardAndCommunities">
+      <p id="dashboardButton">Dashboard</p>
+      <p id="myCommuntiesButton">My Communities</p>
+    </div>
+    <p><fa-icon id="faUserIcon" [icon]="faUser"></fa-icon></p>
+  </div>
+
+  <!-- end of navigation bar -->
+  <div class="myGroups">
+    <div class="titles">
+      <p id="myGroupsText">My Groups</p>
+
+      <div class="newComunity">
+        <!-- <p><fa-icon id="circleplusIcon" [icon]="circlePlus"></fa-icon></p> -->
+        <button id="newCommunityButton">New Community</button>
+      </div>
+    </div>
+    <div class="communities">
+      <!-- first community -->
+      <div class="communityName1">
+        <img src="" />
+        <div class="communityDetails">
+          <p>Community Name</p>
+          <p>Created on June 21,2023</p>
+        </div>
+        <div class="options">
+          <div class="notInstalled">
+            <p (click)="opeInstallationModal()">Not installed</p>
+          </div>
+          <div (click)="openDeleteGroupModal()" class="vertical-ellipsis">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end of first community -->
+
+      <!-- start of second community -->
+      <div class="communityName1">
+        <img src="" />
+        <div class="communityDetails">
+          <p>Community Name</p>
+          <p>Created on June 21,2023</p>
+        </div>
+        <div class="options">
+          <div class="installed">
+            <p (click)="openCommunityPlatformModal()">Installed</p>
+          </div>
+          <div class="vertical-ellipsis">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end of second community -->
+
+      <!-- modal for community platform -->
+      <div *ngIf="showCommunityPlatformModal" class="communityPlatformModal">
+        <div class="communityPlatformModalContent">
+          <h2>What is the community platform?</h2>
+          <div class="platforms">
+            <div class="whatsappAndDiscord">
+              <p id="whatsapp">Whatsapp</p>
+              <p id="discord">Discord</p>
+            </div>
+            <p id="telegram">Telegram</p>
+          </div>
+          <button id="addNowButton">Add now</button>
+        </div>
+      </div>
+      <!-- end of modal for community platform -->
+
+      <!-- start of installation modal -->
+      <div *ngIf="showInstallationModal" class="installationModal">
+        <div class="installationModalContent">
+          <h2 class="installationText">Installation</h2>
+          <div class="completeness">
+            <p>1/2 complete</p>
+          </div>
+          <!-- first instruction -->
+          <div class="instruction1">
+            <p id="sendTheTokenText">
+              <span class="number1">1.</span> Send the token below to the bot
+            </p>
+            <p id="copyAndSendText">
+              Copy and send the following Toekn to the bot to link it with your
+              Barack Llama account
+            </p>
+            <div class="token">
+              <p>122334343493553</p>
+              <button class="copyButton">Copy</button>
+            </div>
+            <button class="accessTheBot">Access the bot</button>
+          </div>
+          <!-- end of first instruction -->
+
+          <!-- start of 2nd instruction -->
+          <div class="instruction2">
+            <p id="addTheBotText">
+              <span class="number2">2.</span>Add the bot in your community
+            </p>
+            <p id="clickTheButtonToCopyText">
+              Click the button below to copy the phone number
+            </p>
+            <div class="phoneNumber">
+              <p>+55 47654656</p>
+              <button>Copy</button>
+            </div>
+          </div>
+          <!-- end of 2nd instruction -->
+        </div>
+      </div>
+
+      <!-- end of installation modal -->
+    </div>
+  </div>
+
+  <!-- modal for delete operation -->
+  <div *ngIf="showDeleteGroupModal" class="deleteModal">
+    <div class="deleteModalContent">
+      <h2>Are you sure?</h2>
+      <p>This action cannot be undone</p>
+      <div class="formOperations">
+        <button class="deleteButton">Delete</button>
+        <button class="cancelButton">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of modal for delete operation -->
+</div>

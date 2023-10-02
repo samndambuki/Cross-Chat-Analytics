@@ -1,0 +1,81 @@
+.container {
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  height: 140vh;
+  width: 100vw;
+}
+
+.mostEngagedLeastEngaged {
+  display: flex;
+  margin-left: 4rem;
+}
+
+/* most engaged members */
+.mostEngaged {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 35vw;
+  height: 40vh;
+  border: 1px solid transparent;
+  background-color: white;
+  margin-left: 3.8rem;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.mostEngagedContent {
+  display: flex;
+  gap: 6rem;
+}
+
+.mostEngaged > * {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+/* least engaged members */
+.leastEngaged {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 35vw;
+  height: 40vh;
+  border: 1px solid transparent;
+  background-color: white;
+  margin-left: 3.8rem;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+
+.leastEngagedContent {
+  display: flex;
+  gap: 6rem;
+}
+
+.leastEngaged > * {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.averageMessages{
+    display: flex;
+}
+
+/* start of average messages */
+.averageMessages{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 78vw;
+    height: 50vh;
+    border: 1px solid transparent;
+    background-color: white;
+    margin-left: 7.8rem;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+/* end of average messages */
