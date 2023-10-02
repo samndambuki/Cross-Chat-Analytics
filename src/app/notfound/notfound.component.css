@@ -1,0 +1,31 @@
+.container{
+    background-color: #c28f56;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.big{
+    font-size: 4rem;
+   
+}
+.bigger{
+    font-size: 10rem;
+     font-weight: bolder;
+    
+}
+.medium{
+    font-size: 2rem;
+}
+
+.container button{
+    padding: .9rem 3rem;
+    border-color: white;
+    background-color: #c28f56;
+    color: white;
+    border-radius: 1rem;
+}
