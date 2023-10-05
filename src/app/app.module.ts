@@ -25,15 +25,12 @@ import { EngagedMembersAverageMessagesComponent } from './engaged-members-averag
 import { AcquisitionComponent } from './acquisition/acquisition.component';
 import { RetentionComponent } from './retention/retention.component';
 import { ContentComponent } from './content/content.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    
-    
-  ],
+  declarations: [AppComponent],
   imports: [
-    
     BrowserModule,
     AppRoutingModule,
     SignupComponent,
@@ -56,9 +53,10 @@ import { ContentComponent } from './content/content.component';
     AcquisitionComponent,
     EngagedMembersAverageMessagesComponent,
     RetentionComponent,
-    ContentComponent
+    ContentComponent,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
