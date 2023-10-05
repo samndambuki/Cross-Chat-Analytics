@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { RouterModule } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -14,6 +15,23 @@ import { RouterModule } from '@angular/router';
 export class LoginComponent {
   email: string = '';
   password: string = '';
+
+  constructor(private auth: AuthService) {}
+
+  login() {
+    if (this.email == '') {
+      alert('Please enter email');
+      return;
+    }
+    if (this.password == '') {
+      alert('Please enter password');
+      return;
+    }
+
+    this.auth.login(this.email, this.password);
+    this.email = '';
+    this.password = '';
+  }
 
   //reCAPTCHA site key
   reCaptchaSiteKey = '6Le0_0UoAAAAAHvOJm5DIRsx7vp13dMDm5iJmI5Z';

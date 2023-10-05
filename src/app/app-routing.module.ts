@@ -1,37 +1,38 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SignupComponent } from './signup/signup.component';
-import { LoginComponent } from './login/login.component';
-import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
-import { EmailsentComponent } from './emailsent/emailsent.component';
-import { ChangepasswordComponent } from './changepassword/changepassword.component';
-import { PasswordchangesuccessfulComponent } from './passwordchangesuccessful/passwordchangesuccessful.component';
-import { YournameComponent } from './yourname/yourname.component';
-import { YouremailComponent } from './youremail/youremail.component';
-import { VerifyemailComponent } from './verifyemail/verifyemail.component';
-import { ResentemailComponent } from './resentemail/resentemail.component';
-import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
-import { AccountSettingsComponent } from './account-settings/account-settings.component';
-import { BillingComponent } from './billing/billing.component';
-import { FirstCommunityComponent } from './first-community/first-community.component';
-import { NotfoundComponent } from './notfound/notfound.component';
-import { AccessdeniedComponent } from './accessdenied/accessdenied.component';
-import { ResetpwdComponent } from './resetpwd/resetpwd.component';
 
-import { NewcommunityComponent } from './newcommunity/newcommunity.component';
-import { OverviewComponent } from './overview/overview.component';
-import { CalendarComponent } from './calendar/calendar.component';
-import { AcquisitionComponent } from './acquisition/acquisition.component';
-import { EngagementComponent } from './engagement/engagement.component';
-import { EngagedMembersAverageMessagesComponent } from './engaged-members-average-messages/engaged-members-average-messages.component';
-import { RetentionComponent } from './retention/retention.component';
-import { ContentComponent } from './content/content.component';
+import { AccessdeniedComponent } from './components/accessdenied/accessdenied.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { LoginComponent } from './components/login/login.component';
+import { AccountSettingsComponent } from './components/account-settings/account-settings.component';
+import { AcquisitionComponent } from './components/acquisition/acquisition.component';
+import { BillingComponent } from './components/billing/billing.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
+import { ChangepasswordComponent } from './components/changepassword/changepassword.component';
+import { ContentComponent } from './components/content/content.component';
+import { EmailsentComponent } from './components/emailsent/emailsent.component';
+import { EngagedMembersAverageMessagesComponent } from './components/engaged-members-average-messages/engaged-members-average-messages.component';
+import { EngagementComponent } from './components/engagement/engagement.component';
+import { FirstCommunityComponent } from './components/first-community/first-community.component';
+import { NewcommunityComponent } from './components/newcommunity/newcommunity.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
+import { OverviewComponent } from './components/overview/overview.component';
+import { PasswordchangesuccessfulComponent } from './components/passwordchangesuccessful/passwordchangesuccessful.component';
+import { ResentemailComponent } from './components/resentemail/resentemail.component';
+import { ResetpasswordComponent } from './components/resetpassword/resetpassword.component';
+import { ResetpwdComponent } from './components/resetpwd/resetpwd.component';
+import { RetentionComponent } from './components/retention/retention.component';
+import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
+import { VerifyemailComponent } from './components/verifyemail/verifyemail.component';
+import { YouremailComponent } from './components/youremail/youremail.component';
+import { YournameComponent } from './components/yourname/yourname.component';
+
 
 
 const routes: Routes = [
   {path:'signup',component:SignupComponent},
   {path:'login',component:LoginComponent},
-  {path:'',redirectTo:'/signup',pathMatch:'full'},
+  {path:'',redirectTo:'/login',pathMatch:'full'},
   {path:'resetpassword',component:ResetpasswordComponent},
   {path:'emailsent',component:EmailsentComponent},
   {path:'changepassword',component:ChangepasswordComponent},
