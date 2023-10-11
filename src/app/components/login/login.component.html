@@ -20,6 +20,7 @@
       <form>
         <label for="email" id="yourEmail">Your email:</label>
         <input
+         name="email"
           type="email"
           id="email"
           placeholder="Type your e-mail"
@@ -36,16 +37,23 @@
 
         <br />
 
-        <!-- recapctha section for robot verification -->
+        <!-- start of recapctha section for robot verification -->
 
-        <!-- Recapctha section for robot verification -->
-        <!-- <ng-recaptcha
-          [siteKey]="reCaptchaSiteKey"
-          (resolved)="handleCaptchaResolved($event)"
-        ></ng-recaptcha> -->
+        <form [formGroup]="aFormGroup">
+          <ngx-recaptcha2
+            #captchaElem
+            [siteKey]="siteKey"
+            formControlName="recaptcha"
+          >
+          </ngx-recaptcha2>
+        </form>
+
+        <!-- end of  Recapctha section for robot verification -->
+
+        <br />
 
         <div class="form-actions">
-          <button (click)="login()"  id="loginButton">Log In</button>
+          <button (click)="login()" id="loginButton">Log In</button>
           <br />
           <br />
           <p id="forgotPassword">Forgot Password</p>

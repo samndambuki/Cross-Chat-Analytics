@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { CommonModule } from '@angular/common';
 import { AngularFireModule } from '@angular/fire/compat';
@@ -27,6 +27,7 @@ import { UserDashboardComponent } from './components/user-dashboard/user-dashboa
 import { VerifyemailComponent } from './components/verifyemail/verifyemail.component';
 import { YouremailComponent } from './components/youremail/youremail.component';
 import { YournameComponent } from './components/yourname/yourname.component';
+import { NgxCaptchaModule } from 'ngx-captcha';
 
 @NgModule({
   declarations: [AppComponent],
@@ -54,6 +55,8 @@ import { YournameComponent } from './components/yourname/yourname.component';
     EngagedMembersAverageMessagesComponent,
     RetentionComponent,
     ContentComponent,
+    ReactiveFormsModule,
+    NgxCaptchaModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],

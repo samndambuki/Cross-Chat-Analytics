@@ -1,22 +1,42 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {
+  FormControl,
+  Validators,
+  FormsModule,
+  FormBuilder,
+  FormGroup,
+  ReactiveFormsModule,
+} from '@angular/forms';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { RouterModule } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
+import { NgxCaptchaModule } from 'ngx-captcha';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule, RecaptchaModule, RouterModule],
+  imports: [CommonModule, FormsModule, RecaptchaModule, RouterModule,ReactiveFormsModule,NgxCaptchaModule],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
+  protected aFormGroup: FormGroup;
+
   email: string = '';
   password: string = '';
 
-  constructor(private auth: AuthService) {}
+  constructor(private auth: AuthService, private formBuilder: FormBuilder) {
+    this.aFormGroup = this.formBuilder.group({
+      recaptcha: ['', Validators.required],
+    });
+  }
+
+  ngOnInit() {
+    this.aFormGroup = this.formBuilder.group({
+      recaptcha: ['', Validators.required],
+    });
+  }
 
   login() {
     if (this.email == '') {
@@ -34,7 +54,7 @@ export class LoginComponent {
   }
 
   //reCAPTCHA site key
-  reCaptchaSiteKey = '6Le0_0UoAAAAAHvOJm5DIRsx7vp13dMDm5iJmI5Z';
+  siteKey:string = '6LcKOZIoAAAAAEgQe-h_7Dud5MV4BKzlKK3HiIO_';
 
   // Function to handle CAPTCHA resolution
   handleCaptchaResolved(event: any): void {
